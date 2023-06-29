@@ -14,7 +14,7 @@ class AnyBar():
         self.address = address
         self.socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-    def set(self, color, text=None):
+    def change(self, color, text=None):
         if color not in colors:
             raise ValueError(
                 ('Color is not valid. It must be one of the '
@@ -55,5 +55,5 @@ if __name__ == '__main__':
     )
     args = parser.parse_args()
 
-    AnyBar(port=args.port, address=args.address).set(args.color)
+    AnyBar(port=args.port, address=args.address).change(args.color)
 
