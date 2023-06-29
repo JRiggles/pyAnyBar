@@ -13,19 +13,19 @@ pip install pyanybar
 ```python
 from anybar import AnyBar
 
-AnyBar().set('red')
+AnyBar().change('red')
 ```
 
 A port number can also be added:
 
 ```python
-AnyBar(port=11111).set('red')
+AnyBar(port=11111).change('red')
 ```
 
 pyAnyBar always works with [Brett Terpstra's fork](https://github.com/ttscoff/AnyBar) of AnyBar that allows for text to be displayed:
 
 ```python
-AnyBar().set('cyan', text='hello world')
+AnyBar().change('cyan', text='hello world')
 
-AnyBar().set('none')
+AnyBar().change('none')
 ```
